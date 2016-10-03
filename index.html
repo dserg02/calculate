@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Test</title>
+	
+	<script type = "text/javascript" 
+	src = "treenode.js"></script>
+	<script type = "text/javascript" 
+	src = "eqparser.js"></script>
+	<script>
+		var eq = new eqParser();
+	</script>
+	</head>
+<body>
+	Input: <input type = "text" id = "input" />
+	<br /><br /><input type = "button" value = "Calculate" onclick = "eq.setExpression(document.getElementById('input').value); eq.answer();" />
+	<br /><br />
+	Output: <div id = "output"></div>
+    
+</body>
+</html>
